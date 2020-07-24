@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Acessível</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Custom JS -->
+    <script src="./js/main.js" crossorigin="anonymous"></script>
+</head>
+<!-- START MENU -->
+<nav class="navbar navbar-expand-lg bg-two text-uppercase fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Job Acessível</a>
+    <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-one text-white rounded"
+      type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#vaga">
+            Buscar Vaga
+          </a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#companies">
+            Para Empresas
+          </a>
+        </li>
+        <li class="nav-item mx-0 mx-lg-1">
+          <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./enviar-vaga.html">
+            Publique sua vaga
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- END MENU -->
+
+<!-- START HEADER -->
+<header class="masthead bg-one text-white text-center">
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="masthead-heading text-uppercase mb-0">Inclusão de Profissionais com Deficiência</h1>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <!-- Masthead Subheading-->
+    <p class="masthead-subheading font-weight-light mb-0 lead">
+      No Brasil, sete em cada dez corporações têm dificuldades de encontrar pessoas capacitadas para as oportunidades que oferecem.
+      Nosso trabalho é unir as empresas aos profissionais, impactando positivamente a sociedade.  
+  </div>
+</header>
+<!-- END HEADER -->
+
+<!-- START SEARCH -->
+<section class="page-section search-header text-blue mb-0" id="vaga">
+  <div class="container" >
+    <!-- About Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase">Encontre sua vaga</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom ">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+  </div>
+</section>
+
+<section class="page-section bg-image-people text-white mb-0 search-section" id="search">
+  <div class="container">
+    <form class="row-form row buscador-vagas" action="busca.html" method="GET">
+      <div class="col-md form-group">
+        <select class="form-control">
+          <option disabled selected>Área de trabalho</option>
+          <option value="">Analista de Recursos Humanos</option>
+          <option value="">Auxiliar de Produção</option>
+          <option value="">Operador de Atendimento ao Cliente</option>
+          <option value="">Pessoa Desenvolvedora Web</option>
+          <option value="">UX/UI Designer</option>
+        </select>
+      </div>
+      <div class="col-md form-group">
+        <select class="form-control" id="estados">
+          <option disabled selected>Estado</option>
+          <option value="0">AC</option>
+          <option value="1">AL</option>
+          <option value="2">AM</option>
+          <option value="3">AP</option>
+          <option value="4">BA</option>
+          <option value="5">CE</option>
+          <option value="6">DF</option>
+          <option value="7">ES</option>
+          <option value="8">GO</option>
+          <option value="9">MA</option>
+          <option value="10">MG</option>
+          <option value="11">MS</option>
+          <option value="12">MT</option>
+          <option value="13">PA</option>
+          <option value="14">PB</option>
+          <option value="15">PE</option>
+          <option value="16">PI</option>
+          <option value="17">PR</option>
+          <option value="18">RJ</option>
+          <option value="19">RN</option>
+          <option value="20">RO</option>
+          <option value="21">RR</option>
+          <option value="22">RS</option>
+          <option value="23">SC</option>
+          <option value="24">SP</option>
+          <option value="25">SE</option>
+          <option value="26">TO</option>
+        </select>
+      </div>
+      <div class="col-md form-group">
+        <select class="form-control" id="cidades">
+          <option disabled selected>Selecione um estado</option>
+        </select>
+      </div>
+      <div class="col-md form-group">
+        <select class="form-control">
+          <option disabled selected>Tipo de deficiência</option>
+          <option value="">Deficiência Visual</option>
+          <option value="">Deficiência Auditiva</option>
+          <option value="">Deficiência Mental</option>
+          <option value="">Deficiência Física</option>
+          <option value="">Deficiência Múltipla</option>
+        </select>
+      </div>
+      <div class="col-md form-group">
+        <button class="btn btn-default botao-busca text-uppercase">
+          Buscar vagas
+          <i class="fa fa-search"></i>
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>
+<!-- END SEARCH -->
+
+<!-- START COMPANY -->
+<section class="page-section bg-three text-white mb-0 " id="companies">
+  <div class="container">
+    <!-- About Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-white">Para empresas</h2>
+    <!-- Icon Divider-->
+    <div class="divider-custom divider-light">
+      <div class="divider-custom-line"></div>
+      <div class="divider-custom-icon"><svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false"
+          data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+          data-fa-i2svg="">
+          <path fill="currentColor"
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+          </path>
+        </svg><!-- <i class="fas fa-star"></i> -->
+      </div>
+      <div class="divider-custom-line"></div>
+    </div>
+    <!-- About Section Content-->
+    <div class="row">
+      <div class="col-lg-4 ml-auto">
+        <p class="lead">Contratar um funcionário portador de deficiência física é essencial para garantir um ambiente mais sadio e humanizado dentro da empresa. Além disso, essa ação também garante que a companhia esteja dentro das conformidades da lei, evitando possíveis transtornos com a fiscalização.</p>
+      </div>
+      <div class="col-lg-4 mr-auto">
+        <p class="lead">são excelentes aprendizados que uma PCD pode trazer para seus colaboradores. Os profissionais podem aprender mais sobre inclusão e ajuda mútua, valorizando a importância da participação de todos no bom desempenho nos negócios.
+          Cadastre sua vaga gratuitamente.
+        </p>
+      </div>
+    </div>
+    <!-- About Section Button-->
+    <div class="text-center mt-4">
+      <a class="btn btn-xl " href="./enviar-vaga.html">
+        <i class="fas fa-cloud-upload-alt mr-2"></i>
+        ENVIAR VAGA!
+      </a>
+    </div>
+  </div>
+</section>
+<!-- END COMPANY -->
+
+<!-- START FOOTER -->
+<footer class="footer text-center bg-two">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Social Icons-->
+      <div class="col-lg-12 mb-12 mb-lg-0">
+        <h4 class="page-section-heading text-center text-uppercase text-white">Contatos</h4>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/patricia.borges.52/" target="_blank">
+          <i class="fab fa-fw fa-facebook-f"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/login?lang=pt"target="_blank">
+          <i class="fab fa-fw fa-twitter"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/patriciagborges/"target="_blank">
+          <i class="fab fa-fw fa-linkedin-in"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="mailto:patriciagborges@gmail.com?subject=Hello%20again">
+          <i class="fas fa-fw fa-envelope-open-text"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright py-4 text-center text-white">
+  <div class="container"><small>Copyright © Inclusão Jobs 2020</small></div>
+</div>
+<!-- END FOOTER -->
+
+</body>
+
+</html>
